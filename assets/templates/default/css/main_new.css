@@ -1,0 +1,1389 @@
+.tpl_new_online_main_page .container .gl_block .block_title h1 {
+  color: #1a1a1a;
+}
+
+.tpl_new_online_main_page .container .gl_block .content li {
+  color: #444444;
+}
+
+.tpl_new_online_main_page .container .btn.btn_main_reverse {
+  color: #ffffff;
+  background: linear-gradient(to left, #ff8300, #ffaf5c);
+  border: none;
+}
+
+.tpl_new_online_main_page .container .btn.btn_main_reverse:hover,
+.tpl_new_online_main_page .container .btn.btn_main_reverse:focus {
+  background: linear-gradient(to left, #ffaf5c, #ff8300);
+}
+
+.tpl_new_online_main_page .container .btn.go_pay_online {
+  color: #fd8200;
+  border: 2px solid #fd8200;
+  background: #ffffff;
+}
+
+.tpl_new_online_main_page .container .btn.go_pay_online:hover,
+.tpl_new_online_main_page .container .btn.go_pay_online:focus {
+  color: #ffffff;
+  background: #fd8200;
+}
+
+/*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+.new_study_online {
+  /* background: #ffffff; */
+  /* padding-bottom: 40px; */
+}
+
+.new_study_online .study_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: auto;
+  align-items: flex-start;
+  /* margin: 100px auto; */
+  /* z-index: 3; */
+}
+
+.new_study_online .study_block .study_bar {
+  height: 7px;
+  position: static;
+  /* left: 0; */
+  width: calc(100% - 200px);
+  margin-left: 80px;
+  /* margin-right: auto; */
+  background: #d9d9d9;
+  /* top: 0px; */
+}
+
+.new_study_online .study_etaps {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  max-width: 100%;
+  min-height: auto;
+}
+
+.new_study_online .study_etaps .study_etap {
+  position: static;
+  /* border-radius: 30px;
+  padding: 20px 25px; */
+  width: fit-content;
+}
+
+.new_study_online .study_etaps .study_start {
+  position: static;
+}
+
+.new_study_online .study_etaps .study_start img {
+  width: 60px;
+}
+
+.new_study_online .study_etaps .study_start::before,
+.new_study_online .study_etaps .study_finish::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fd8200;
+  width: 23px;
+  height: 23px;
+  top: -115px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.new_study_online .study_etaps .study_start::after,
+.new_study_online .study_etaps .study_finish::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fd8200;
+  width: 1px;
+  height: 115px;
+  top: -115px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.new_study_online .study_etaps .study_etap.etap_1 {
+  position: static;
+}
+
+.new_study_online .study_etaps .study_etap.etap_3 {
+  position: static;
+}
+
+.new_study_online .study_etaps .study_diplom {
+  position: static;
+}
+
+.new_study_online .study_etaps .study_etap.etap_1::before,
+.new_study_online .study_etaps .study_etap.etap_3::before,
+.new_study_online .study_etaps .study_diplom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fd8200;
+  width: 15px;
+  height: 15px;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.new_study_online .study_etaps .study_etap.etap_1::after,
+.new_study_online .study_etaps .study_etap.etap_3::after,
+.new_study_online .study_etaps .study_diplom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fd8200;
+  width: 1px;
+  height: 111px;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.new_study_online .study_finish {
+  position: static;
+}
+
+.new_study_online .study_finish img {
+  width: 60px;
+}
+
+/* .new_study_online .center_block_title {
+  margin-bottom: 40px;
+} */
+
+.video_new_study_online {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+}
+
+.video_new_study_online iframe {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 500px;
+  width: 890px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.container_list_new_study_online {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.list_new_study_online {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_item_new_study_online {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #484848;
+}
+
+.first_item_new_study_online::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 0;
+  top: 34px;
+  border-radius: 50%;
+  border: 2px solid #484848;
+  background-color: #fd8200;
+}
+
+.item_new_study_online {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #484848;
+}
+
+.item_new_study_online::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 34px;
+  border-radius: 50%;
+  border: 2px solid #484848;
+  background-color: #fd8200;
+}
+
+.last_item_new_study_online {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #484848;
+}
+
+.last_item_new_study_online::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 0;
+  border: 2px solid #484848;
+  top: 34px;
+  border-radius: 50%;
+  background-color: #fd8200;
+}
+
+.box_bottom_line {
+  background-color: #484848;
+  height: 2px;
+  width: 100%;
+}
+
+/*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+.block_gallery_slider {
+  background-color: #fff;
+  /* padding-top: 40px; */
+}
+
+.for_block {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 100%;
+  padding: 35px 55px;
+  /* gap: 20px; */
+  margin-bottom: 20px;
+  /* background: #fd8200; */
+  border-radius: 20px;
+  /* border: 1px solid #ddd; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.for_pretitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+}
+.for_block_in {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.for_block_in ul li {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 0px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.gallery_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.gallery {
+  display: block;
+  width: 100%;
+}
+
+.gift_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px 25px;
+  gap: 20px;
+  overflow: hidden;
+}
+.gift_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.gift_pretitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+  left: 0px;
+  gap: 2px;
+}
+.slick-dots li {
+  background: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #d2d2d2;
+}
+.slick-dots li.slick-active {
+  background: #38761d;
+}
+.slick-dots li button {
+  display: none !important;
+}
+
+.slick-prev_arrow {
+  position: absolute;
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5px;
+}
+.slick-next_arrow {
+  position: absolute;
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5px;
+}
+.slick-prev_arrow:hover,
+.slick-next_arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+
+.new_payment_online_section {
+  background-color: #fafafa;
+}
+
+.title_new_payblock_online {
+  color: #484848;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: normal;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.secondary_title_new_payblock_online {
+  color: #fd8200;
+}
+
+.new_payment_online_container {
+  display: flex;
+
+  gap: 44px;
+}
+
+.box_new_payment_online {
+  width: calc((100% - 66px) / 3);
+  flex-shrink: 0;
+}
+
+.list_payment_new_payblock_online {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-bottom: 50px;
+}
+
+.item_payment_new_payblock_online {
+  display: flex;
+  width: min-content;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 6px 6px;
+  border-radius: 6px;
+  border: 1px solid #fd8200;
+  background-color: #ffffff;
+}
+
+.svg_google_pay_item_new_payblock_online {
+  display: block;
+  width: 52px;
+  height: 20px;
+  flex-shrink: 0;
+  position: relative;
+  background: url(../img/icons/google-pay.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.svg_apple_pay_item_new_payblock_online {
+  display: block;
+  width: 44px;
+  height: 21px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  position: relative;
+  background: url(../img/icons/apple-pay.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.svg_wayforpay_pay_item_new_payblock_online {
+  display: block;
+  width: 100px;
+  height: 21px;
+  position: relative;
+  background: url(../img/icons/wayforpay_logo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.svg_business_card_item_new_payblock_online {
+  display: block;
+  width: 22.612px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  position: relative;
+  background: url(../img/icons/business_card.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.new_questions_online {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.title_questions_online_new_payment_online {
+  font-size: 30px;
+  line-height: normal;
+  color: #484848;
+  font-weight: 700;
+}
+
+.link_chat_online_telegram {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.link_chat_online_icon_telegram {
+  border-radius: 50%;
+  background: #2b9fd7;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_link_chat_online_telegram {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.box_list_card_new_payblock_online {
+  display: flex;
+  column-gap: 22px;
+}
+
+.first_item_card_new_payblock_online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #fff8f2;
+  border-radius: 40px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.box_title_item_card_new_payblock_online {
+  text-align: center;
+}
+
+.title_item_card_new_payblock_online {
+  font-size: 26px;
+  line-height: normal;
+  color: #484848;
+  font-weight: 700;
+}
+
+.list_card_new_payblock_online {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: auto;
+}
+
+.item_card_new_payblock_online {
+  display: flex;
+  column-gap: 8px;
+}
+
+.item_card_new_payblock_online svg {
+  padding-top: 3px;
+  display: inline;
+  flex-shrink: 0;
+}
+
+.item_card_new_payblock_online img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.text_item_new_payblock_online {
+  font-size: 16px;
+  line-height: 1.37;
+}
+
+.price_item_new_payblock_online {
+  line-height: 1.3;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.button_price_item_new_payblock_online {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.85;
+  border-radius: 35px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #fff;
+  background: #fd8200;
+  border: 1px solid #fd8200;
+}
+
+.button_price_item_new_payblock_online:hover,
+.button_price_item_new_payblock_online:focus {
+  color: #fd8200;
+  background: #fff;
+}
+
+.lector_package_form_part_2 {
+  display: none;
+  padding: 20px 30px;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lector_package_form_part_2.active {
+  display: block;
+}
+
+/*-------------------------------STYLE_NEW_REVIEW_ONLINE_ALL---------------------------*/
+
+.box_rewiev_and_received_rights {
+  display: flex;
+  column-gap: 40px;
+}
+
+.box_rewiev_and_received_rights > .rewiev_slider {
+  width: 50%;
+  overflow: hidden;
+}
+
+.box_rewiev_and_received_rights > .rewiev_slider .slick-track {
+  width: 50%;
+  min-width: auto;
+  /* min-width: 100%; */
+}
+.gallery_block_2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 50%;
+  margin: 20px auto 60px;
+  gap: 20px;
+}
+.gallery_2 {
+  display: block;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.gallery_block_2_title {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* .new_status_check_success {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 999999999999999999999999999;
+} */
+
+.new_status_check_success {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 999999999999999999999999999;
+}
+
+/*-------------------------------STYLE_NEW_ADVANTAGE_BLOCK---------------------------*/
+.new_advantage_block {
+  background-color: #f2f2f2;
+}
+
+/*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+.block_gift_certificate {
+  padding: 50px 15px;
+}
+
+.certificate_block {
+  width: 100%;
+  max-width: 1580px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px 76px;
+
+  padding: 66px 170px 66px 92px;
+  border-radius: 60px;
+  background-color: #f2f2f2;
+}
+
+.gift_certificate_block_title {
+  align-content: end;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: #273432;
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.gift_certificate_color_title {
+  color: #ff7e00;
+}
+
+.gift_certificate_secondary_title {
+  font-weight: 400;
+}
+
+.img_gift_certificate {
+  grid-column: 1 / 2;
+  grid-row: 1 /3;
+  max-width: 600px;
+}
+
+.block_btn_gift_certificate {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  /* margin-top: 40px; */
+  column-gap: 22px;
+}
+
+.btn_gift_certificate {
+  color: #fd8200;
+  border: 2px solid #fd8200;
+  background: #ffffff;
+
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 35px;
+
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.btn_gift_certificate:hover,
+.btn_gift_certificate:focus {
+  color: #ffffff;
+  background: #fd8200;
+}
+/* 
+.block_btn_gift_certificate .btn_gift_certificate {
+  width: 100%;
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 35px;
+  color: #fff;
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+} */
+
+/* .btn_gift_certificate {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  border: 3px solid #ff7e00;
+  background: #fff;
+
+  color: #ff7e00;
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+} */
+
+/* .btn_gift_certificate:hover,
+.btn_gift_certificate:focus {
+  background: #ff7e00;
+  color: #fff;
+} */
+
+.btn_gift_certificate span {
+  height: 26px;
+}
+
+/* Форма заповнення для сертифікату */
+
+.form_certificate {
+  padding: 8px 0px 0px 0px;
+  width: 100%;
+  max-width: 436px;
+  height: 356px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border: none;
+  /* border-radius: 30px; */
+  background-color: initial;
+  background: none;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.form_certificate .popup_close {
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+}
+
+.form_certificate .gift_certificate_form_h {
+  width: 420px;
+  margin-top: 0px;
+}
+
+.gift_certificate_form_part_2 {
+  display: none;
+  padding: 20px 30px;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gift_certificate_form_part_2.active {
+  display: block;
+}
+
+@media screen and (max-width: 1600px) {
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .certificate_block {
+    column-gap: 46px;
+    padding: 66px 80px 66px 42px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .certificate_block {
+    column-gap: 36px;
+    padding: 66px 32px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /*-------------------------------STYLE_NEW_REVIEW_ONLINE_ALL---------------------------*/
+  .box_rewiev_and_received_rights {
+    display: block;
+  }
+
+  .box_rewiev_and_received_rights > .rewiev_slider {
+    width: 100%;
+  }
+
+  .box_rewiev_and_received_rights > .rewiev_slider .slick-track {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .gallery_block_2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto 60px;
+    gap: 20px;
+  }
+
+  .gallery_2 {
+    max-width: 768px;
+  }
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .certificate_block {
+    column-gap: 36px;
+    padding: 46px 32px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+  .video_new_study_online iframe {
+    height: 400px;
+    width: 710px;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+  .new_payment_online_container {
+    display: block;
+    position: relative;
+    padding-bottom: 180px;
+  }
+
+  .box_new_payment_online {
+    width: 100%;
+  }
+
+  .list_payment_new_payblock_online {
+    margin-bottom: 30px;
+  }
+
+  .item_payment_new_payblock_online {
+    width: fit-content;
+    flex-grow: 0;
+    padding: 6px 16px;
+  }
+
+  .new_questions_online {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    min-width: 320px;
+    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* .title_questions_online_new_payment_online br {
+    display: none;
+  } */
+
+  .new_questions_online_box_telegram {
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .certificate_block {
+    column-gap: 36px;
+    padding: 32px;
+  }
+
+  .gift_certificate_block_title {
+    font-size: 28px;
+  }
+
+  .block_btn_gift_certificate .btn_gift_certificate {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .btn_gift_certificate {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+
+  .new_study_online .study_block {
+    margin: 50px auto;
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .new_study_online .study_block .study_bar {
+    height: 400px;
+    width: 7px;
+  }
+
+  .new_study_online .study_etaps {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-left: 100px;
+    min-height: 400px;
+    padding-left: 0px;
+  }
+
+  .new_study_online .study_etaps .study_start img {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .new_study_online .study_etaps .study_start::before {
+    top: 0px;
+    left: -102px;
+    /* transform: translateY(50%); */
+  }
+
+  .new_study_online .study_etaps .study_start::after {
+    height: 1px;
+    width: 104px;
+    top: 10px;
+    left: -50px;
+    /* transform: translateY(-50%); */
+  }
+
+  .new_study_online .study_etaps .study_etap.etap_1::before,
+  .new_study_online .study_etaps .study_etap.etap_3::before,
+  .new_study_online .study_etaps .study_diplom::before {
+    top: 50%;
+    left: -110px;
+    transform: translateY(-50%);
+  }
+
+  .new_study_online .study_etaps .study_etap.etap_1::after,
+  .new_study_online .study_etaps .study_etap.etap_3::after,
+  .new_study_online .study_etaps .study_diplom::after {
+    width: 100px;
+    height: 1px;
+    top: 50%;
+    left: -50px;
+  }
+
+  .new_study_online .study_etaps .study_finish::before {
+    top: auto;
+    bottom: 0px;
+    left: -102px;
+  }
+
+  .new_study_online .study_etaps .study_finish::after {
+    height: 1px;
+    width: 104px;
+    top: auto;
+    bottom: 10px;
+    left: -50px;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+  .for_pretitle {
+    font-size: 24px;
+  }
+
+  .for_block_in ul li {
+    font-size: 18px;
+  }
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+  .title_new_payblock_online {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .price_item_new_payblock_online {
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  .title_questions_online_new_payment_online {
+    font-size: 26px;
+  }
+
+  .title_link_chat_online_telegram {
+    font-size: 22px;
+  }
+
+  /*-------------------------------STYLE_NEW_REVIEW_ONLINE_ALL---------------------------*/
+
+  .gallery_2 {
+    display: block;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .certificate_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0px;
+    padding: 62px;
+  }
+
+  .gift_certificate_block_title {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .block_btn_gift_certificate {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .block_btn_gift_certificate .btn_gift_certificate {
+    font-size: 16px;
+  }
+
+  .btn_gift_certificate {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+  /* .video_new_study_online {
+    margin-bottom: 20px;
+  } */
+  .video_new_study_online iframe {
+    height: 300px;
+    width: 400px;
+  }
+
+  .first_item_new_study_online {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .item_new_study_online {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  .last_item_new_study_online {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+  .for_block_in ul li {
+    font-size: 16px;
+  }
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+
+  .link_chat_online_icon_telegram {
+    width: 40px;
+    height: 40px;
+  }
+
+  .link_chat_online_icon_telegram svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .item_payment_new_payblock_online {
+    width: fit-content;
+    flex-grow: 1;
+    padding: 6px 16px;
+  }
+
+  .box_list_card_new_payblock_online {
+    flex-direction: column;
+    row-gap: 22px;
+    column-gap: 0px;
+  }
+
+  .first_item_card_new_payblock_online {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+
+  /* .title_questions_online_new_payment_online br {
+    display: block;
+  } */
+
+  .button_price_item_new_payblock_online {
+    font-size: 15px;
+    border-radius: 25px;
+  }
+
+  /*-------------------------------STYLE_NEW_REVIEW_ONLINE_ALL---------------------------*/
+  .new_review_online_all .rewiev_slider {
+    display: none;
+  }
+
+  .new_review_online_all .review_s_subtitle {
+    display: none;
+  }
+
+  .gallery_2 {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+  .certificate_block {
+    padding: 32px;
+  }
+
+  .form_certificate {
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+  .new_study_online {
+    padding-bottom: 30px;
+  }
+
+  .video_new_study_online iframe {
+    height: 250px;
+    width: 443px;
+  }
+
+  .container_list_new_study_online {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    column-gap: 40px;
+    padding-left: 30px;
+  }
+
+  .list_new_study_online {
+    flex-direction: column;
+  }
+
+  .first_item_new_study_online::after {
+    left: -51px;
+    top: 0;
+  }
+
+  .item_new_study_online::after {
+    left: -51px;
+    top: 0;
+    transform: translate(0%);
+  }
+
+  .last_item_new_study_online {
+    line-height: 1;
+  }
+
+  .last_item_new_study_online::after {
+    left: -51px;
+    top: 0;
+    bottom: 0px;
+  }
+
+  .box_bottom_line {
+    height: 360px;
+    width: 2px;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+  .for_block {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+  .new_payment_online_container {
+    padding-bottom: 140px;
+  }
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+
+  .block_btn_gift_certificate {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+
+  .new_study_online .study_block {
+    margin: 50px auto 0px;
+  }
+
+  .new_study_online .study_block .study_bar {
+    margin-left: 20px;
+  }
+
+  .video_new_study_online iframe {
+    height: 200px;
+    width: 360px;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+  .title_new_payblock_online {
+    text-align: center;
+  }
+
+  .title_questions_online_new_payment_online {
+    font-size: 20px;
+  }
+
+  .title_link_chat_online_telegram {
+    font-size: 18px;
+  }
+
+  /*-------------------------------STYLE_NEW_REVIEW_ONLINE_ALL---------------------------*/
+  /* .new_review_online_all .rewiev_slider {
+    display: none;
+  } */
+
+  /*-------------------------------STYLE_GIFT_CERTIFICATE---------------------------*/
+  .certificate_block {
+    border-radius: 30px;
+    padding: 16px;
+  }
+
+  .form_certificate {
+    padding: 8px;
+  }
+
+  .gift_certificate_block_title {
+    font-size: 24px;
+  }
+
+  .form_certificate .gift_certificate_form_h {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  /*-------------------------------STYLE_NEW_STUDY_ONLINE---------------------------*/
+  .new_study_online .study_etaps .study_etap.etap_1,
+  .new_study_online .study_etaps .study_etap.etap_3,
+  .new_study_online .study_etaps .study_diplom {
+    overflow: visible;
+  }
+
+  .video_new_study_online iframe {
+    width: 100%;
+  }
+
+  /*-------------------------------STYLE_GALLERY_BLOCK_SLIDER---------------------------*/
+
+  /*-------------------------------STYLE_NEW_PAYBLOCK_ONLINE---------------------------*/
+  .new_questions_online {
+    display: block;
+  }
+
+  .box_title_questions_online {
+    margin-bottom: 14px;
+  }
+
+  .gift_certificate_form_h .testlesson_form_title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+}

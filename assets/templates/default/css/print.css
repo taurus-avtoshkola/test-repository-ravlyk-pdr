@@ -1,0 +1,36 @@
+.diplom_holder{
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin: 0px auto;
+	position: relative;
+}
+.diplom_holder .diplom_name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 188px;
+    width: 100%;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+.diplom_holder .diplom_date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 315px;
+    left: 105px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 20px;
+}

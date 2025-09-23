@@ -1,0 +1,12 @@
+
+
+
+.charts-css.area tbody tr td:nth-of-type(10n+1)::before, .charts-css.bar tbody tr:nth-of-type(10n+1) td, .charts-css.bar.multiple tbody tr td:nth-of-type(10n+1), .charts-css.column tbody tr:nth-of-type(10n+1) td, .charts-css.column.multiple tbody tr td:nth-of-type(10n+1), .charts-css.line tbody tr td:nth-of-type(10n+1)::before{
+	background: #2EB371;
+}
+.charts-css.area tbody tr td:nth-of-type(10n+2)::before, .charts-css.bar tbody tr:nth-of-type(10n+2) td, .charts-css.bar.multiple tbody tr td:nth-of-type(10n+2), .charts-css.column tbody tr:nth-of-type(10n+2) td, .charts-css.column.multiple tbody tr td:nth-of-type(10n+2), .charts-css.line tbody tr td:nth-of-type(10n+2)::before{
+	background: #E8482E;
+}
+.charts-css .data{
+	color:#fff!important;
+}

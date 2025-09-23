@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медична довідка</title>
+  </head>
+  <body>
+<style type="text/css">
+	table td,
+	table th{
+    line-height: 14px;
+    font-size: 16px;
+	}
+</style>
+<table>
+	<thead>
+		<tr>
+			<th style="width: 280px;"></th>
+			<th style="width: 15px;"></th>
+			<th style="width: 130px;"></th>
+			<th style="width: 130px;"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr style="height: 100px;">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">Вовчок</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">Василь</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">Іванович</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">16.01.1979 р.</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">Київська обл.</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">м Бровари</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td colspan="2" style="text-align: left; padding-left: 65px; line-height: 14px; font-size: 16px;">вул Київська 261, кв 144	</td>
+		</tr>
+		<tr style="height: 20px;">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td style="text-align: center; line-height: 14px; font-size: 16px;">1А(IІ)</td>
+			<td style="text-align: center; line-height: 14px; font-size: 16px;">Rh (+)</td>
+		</tr>
+		<tr style="height: 20px;">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="text-align: center; line-height: 14px; font-size: 16px;">18.06.2024</td>
+		</tr>
+		<tr style="height: 10px;">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="text-align: center; line-height: 14px; font-size: 16px;">18.06.2026</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+  </body>
+</html>

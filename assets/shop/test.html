@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+<body>
+<button id="payBtn">Оплатити (НЕБЕЗПЕЧНО)</button>
+<script>
+
+const SECRET_KEY = 'ab8a8b6729f305cde51c643dafa57d7d798a30f5';
+const MERCHANT_ACCOUNT = 'pdr_online_com_ua';
+
+function hmacMd5(key, message) {
+  return CryptoJS.HmacMD5(message, key).toString(CryptoJS.enc.Hex);
+}
+
+function ensureArray(v){ return Array.isArray(v) ? v : [v]; }
+
+function buildSignatureString(f) {
+  const pn = ensureArray(f.productName);
+  const pc = ensureArray(f.productCount);
+  const pp = ensureArray(f.productPrice);
+  return [
+    f.merchantAccount,
+    f.merchantDomainName,
+    f.orderReference,
+    String(f.orderDate),
+    String(f.amount),
+    f.currency,
+    ...pn, ...pc, ...pp
+  ].join(';');
+}
+
+function buildForm(fields) {
+  const form = document.createElement('form');
+  form.method = 'POST';
+  form.action = 'https://secure.wayforpay.com/pay';
+  form.acceptCharset = 'utf-8';
+  form.style.display = 'none';
+
+  const add = (n, v) => {
+    if (Array.isArray(v)) {
+      v.forEach(x => { const i = document.createElement('input'); i.type='hidden'; i.name = n+'[]'; i.value = x; form.appendChild(i); });
+    } else {
+      const i = document.createElement('input'); i.type='hidden'; i.name = n; i.value = v; form.appendChild(i);
+    }
+  };
+
+  Object.entries(fields).forEach(([k,v]) => add(k,v));
+  document.body.appendChild(form);
+  form.submit();
+}
+
+document.getElementById('payBtn').addEventListener('click', () => {
+  const now = Math.floor(Date.now()/1000);
+  const f = {
+    merchantAccount: MERCHANT_ACCOUNT,
+    merchantAuthType: 'SimpleSignature',
+    merchantDomainName: 'pdr-online.com.ua',
+    merchantTransactionSecureType: 'AUTO',
+    defaultPaymentSystem: 'card',
+    language: 'UA',
+    orderReference: '1',
+    orderDate: now,
+    amount: '10',
+    currency: 'UAH',
+    returnUrl: 'https://pdr-online.com.ua/pay/?order=1',
+    serviceUrl: 'https://pdr-online.com.ua/pay_s/',
+    clientFirstName: 'name',
+    clientLastName: 'lastname',
+    clientEmail: 'email@example.com',
+    clientPhone: '+380000000000',
+    productName: ['Оплата замовлення'],
+    productCount: ['1'],
+    productPrice: ['10']
+  };
+  const sigStr = buildSignatureString(f);
+
+  f.merchantSignature = hmacMd5(SECRET_KEY, sigStr);
+
+  buildForm(f);
+});
+</script>
+</body>
+</html>

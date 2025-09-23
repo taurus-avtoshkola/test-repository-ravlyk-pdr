@@ -1,0 +1,24 @@
+<?php
+if($src) {
+	$tpl = $tpl ? $tpl : '<a href="[+src+]"><img src="[+src+]" alt="[*pagetitle*]" title="[*pagetitle*]"></a>';
+	$num = $num ? $num : false;
+	$out = '';
+	if($num===false) {
+		$srcArr = json_decode($src, true);
+		if(is_array($srcArr['fieldValue'])){
+			foreach($srcArr['fieldValue'] as $val){
+				$out.= str_replace("[+src+]",$val['image'],$tpl);
+			}
+		}
+		else return '&src must be json string!';
+		
+	} else {
+		$out = json_decode($src);
+		$out = $out[(int)$num-1];
+	}
+	$output = '<div class="thumbs">';
+	$output .= $out;
+	$output .= '</div>';
+	return $out ? $output : '';
+}
+?>
