@@ -13,9 +13,9 @@ jobs:
       - name: Display Php version
         run: php -v
   run-secondary-command:
-    runs-on: windows-latest on Windows
+    runs-on: windows-latest
     steps:
-      - name: Display NPM version
+      - name: Display NPM version on Windows
         run: npm -v
       - name: Display PHP version
         run: php -v
