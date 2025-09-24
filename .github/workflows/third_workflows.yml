@@ -1,0 +1,14 @@
+name: Third workflows
+
+on:
+  push:
+    branches: ["dev"]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Command Multiline
+        run: |
+          pwd 
+          ls -a
