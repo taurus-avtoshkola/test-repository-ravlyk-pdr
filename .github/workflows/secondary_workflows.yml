@@ -1,0 +1,25 @@
+name: secondary_workflow
+
+on:
+  push:
+    branches: ["dev"]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Php version on Ubuntu
+        run: php -v
+
+  run-secondary-command:
+    runs-on: windows-latest
+    steps:
+      - name: Display NODE version on Windows
+        run: npm -v
+
+  run-parallel-command:
+    runs-on: macos-latest
+    needs: run-first-command
+    steps:
+      - name: Display NODE version on macOS
+        run: node -v

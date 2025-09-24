@@ -1,0 +1,22 @@
+name: Six Workflow
+
+on:
+  push:
+    branches:
+      - dev
+      - "page/*" # page/about  page/category  page/contact
+      - "page/**" # page/about/company  page/category/truck
+      - "!page/online" # цю сторінку він не буде відслідковувати (послідовність важлива)
+    tags:
+      - "v1.*" # v1.1   v1.1.2 v1.2.1
+      - "!v1.3.1" # цю версію він не буде відслідковувати
+    paths:
+      - "**.html" # відслідковує всі файли html, є різні способи можна дивитись в документації
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Events Vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF

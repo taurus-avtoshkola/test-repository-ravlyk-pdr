@@ -1,0 +1,21 @@
+name: Third workflows
+
+on:
+  push:
+    branches: ["dev"]
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List File
+        run: ls -a
+      #- uses: actions/checkout@v4
+      - name: Copy File
+        run: |
+          git init
+          git remote add origin "https://$GITHUB_ACTOR${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git"
+          git fetch origin
+          git checkout master
+      - name: List File after Copy Repo
+        run: ls -a
