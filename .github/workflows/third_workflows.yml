@@ -8,7 +8,8 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
-      - name: Command Multiline
-        run: |
-          pwd 
-          ls -a
+      - name: List File and copy Repo
+        run: ls -a
+      - uses: actions/checkout@v4
+      - name: List File after Copy Repo
+        run: ls -a
