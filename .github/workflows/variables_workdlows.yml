@@ -1,0 +1,22 @@
+name: Variables Workflows
+
+on: [push]
+run-name: Variables education
+env:
+  WF_CUSTOM_VAR: WF 1
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    env:
+      JOB_VAR: JOB 1
+    steps:
+      - name: Vars
+        env:
+          ST_VAR: ST 1
+        run: |
+          echo $GITHUB_REF
+          echo '${{github.ref}}'
+          echo $WF_CUSTOM_VAR
+          echo '${{env.WF_CUSTOM_VAR}}'
+          echo $JOB_VAR
+          echo $ST_VAR
