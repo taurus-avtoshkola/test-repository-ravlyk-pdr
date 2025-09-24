@@ -13,6 +13,7 @@ jobs:
       - name: Vars
         env:
           ST_VAR: ST 1
+          WF_CUSTOM_VAR: WF 1 test on two
         run: |
           echo $GITHUB_REF
           echo '${{github.ref}}'
