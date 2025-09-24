@@ -1,0 +1,14 @@
+name: Seventh Workflow
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # здійснює процес по заданому часу 'хвилини години число місяць день_тижня'
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Events Vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF

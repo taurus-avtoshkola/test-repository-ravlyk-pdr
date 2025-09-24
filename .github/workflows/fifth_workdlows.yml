@@ -7,6 +7,8 @@ jobs:
   run-first-command:
     runs-on: ubuntu-latest
     steps:
+      - name: Add master branch
+        run: echo Master Branch
       - name: Events Vars
         run: |
           echo $GITHUB_SHA
